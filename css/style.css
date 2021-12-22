@@ -1,0 +1,662 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 0;
+}
+
+:root {
+    --hover: #ea3a60;
+    --title-color: #232323;
+    --paragraph: #555;
+    --transition: all linear .3s;
+    --roboto: 'Roboto', sans-serif;
+    --popins: 'Poppins', sans-serif;
+    --monostreat: 'Montserrat', sans-serif;
+}
+
+
+/* ============================================
+                COMMON PART END
+=============================================*/
+
+/* ============================================
+                HEADER PART START
+=============================================*/
+#header {
+    padding: 20px 0;
+}
+
+#header .head_col {
+    padding-left: 46px;
+    position: relative;
+}
+
+#header .head_col:after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 30px;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--hover);
+}
+
+#header .head_col .col_icon {
+    color: var(--hover);
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+#header .head_col h4 {
+    color: var(--paragraph);
+    font-family: var(--roboto);
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+#header .head_col h5 {
+    font-family: var(--monostreat);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+#header .head_col:nth-child(3):after,
+#header .head_col:last-child:after {
+    display: none;
+}
+
+#header .head_col .social_icon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    line-height: 45px;
+}
+
+#header .head_col .social_icon a {
+    font-size: 20px;
+    color: var(--hover);
+    margin-left: 20px;
+}
+
+/* ============================================
+                HEADER PART END
+=============================================*/
+
+/* ============================================
+                NAV PART START
+=============================================*/
+#nav {
+    padding: 30px 0;
+    background: var(--hover);
+}
+
+#nav .main_menu ul li {
+    margin-left: 25px;
+    position: relative;
+    transition: var(--transition);
+}
+
+#nav .main_menu ul li a i {
+    padding-left: 5px;
+}
+
+#nav .main_menu ul li a {
+    color: #fff;
+    font-family: var(--roboto);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 45px;
+    text-transform: capitalize;
+}
+
+#nav .main_menu ul li ul {
+    position: absolute;
+    top: 100%;
+    left: -20px;
+    visibility: hidden;
+    opacity: 0;
+    background: #fff;
+    width: 220px;
+    transform: translateY(30px);
+    transition: var(--transition);
+    z-index: 999;
+}
+
+#nav .main_menu ul li ul li {
+    line-height: 40px;
+    border-bottom: 1px solid rgba(34, 34, 34, 0.25);
+    margin-left: 0;
+}
+
+#nav .main_menu ul li ul li:last-child {
+    border-color: transparent;
+}
+
+#nav .main_menu ul li ul li a {
+    color: var(--paragraph);
+    line-height: 40px;
+    padding-left: 20px;
+    transition: var(--transition);
+}
+
+#nav .main_menu ul li:hover>ul {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#nav .main_menu ul li ul li:hover {
+    background: var(--hover);
+}
+
+#nav .main_menu ul li ul li:hover a {
+    color: #fff;
+}
+
+/* ============================================
+                NAV PART END
+=============================================*/
+
+/* ============================================
+                BANNER PART START
+=============================================*/
+
+
+
+#banner .banner_part {
+    padding: 165px 0;
+    position: relative;
+}
+
+#banner .overly:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+#banner .banner_text {
+    padding: 125px 65px;
+    background: var(--hover);
+    z-index: 99;
+}
+
+#banner .banner_text h3 {
+    color: #fff;
+    font-family: var(--roboto);
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+#banner .banner_text h1 {
+    color: #fff;
+    font-family: var(--roboto);
+    font-size: 55px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+#banner .banner_text p {
+    color: #fff;
+    font-family: var(--roboto);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    margin-bottom: 20px;
+}
+
+#banner .banner_text a {
+    color: #fff;
+    font-family: var(--roboto);
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 55px;
+    padding: 0 35px;
+    margin-right: 20px;
+    border: 1px solid #fff;
+    transition: var(--transition);
+}
+
+#banner .banner_text a:hover {
+    color: var(--hover);
+    background: #fff;
+}
+
+/* ============================================
+                BANNER PART END
+=============================================*/
+
+/* ============================================
+                SOLUTION PART START
+=============================================*/
+#solution {
+    padding: 120px 0;
+}
+
+#solution .outter_img {
+    text-align: center;
+    background: var(--hover);
+    padding: 45px 0;
+}
+
+#solution .outter_img h3 {
+    color: #fff;
+    font-family: var(--popins);
+    font-size: 74px;
+    font-weight: 700;
+}
+
+#solution .outter_img h2 {
+    color: #fff;
+    font-family: var(--roboto);
+    font-size: 22px;
+    font-weight: 400;
+}
+
+#solution .common_heading h2 {
+    color: var(--title-color);
+    font-family: var(--popins);
+    font-size: 42px;
+    font-weight: 700;
+    text-transform: capitalize;
+    position: relative;
+    margin-bottom: 35px;
+}
+
+#solution .common_heading h2:before {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 70px;
+    height: 2px;
+    background: var(--hover);
+}
+
+#solution .common_heading p {
+    color: var(--paragraph);
+    font-family: var(--roboto);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    margin-bottom: 55px;
+}
+
+#solution .common_heading p span {
+    display: block;
+    margin-top: 15px;
+}
+
+#solution .common_heading a {
+    color: var(--hover);
+    font-family: var(--roboto);
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 55px;
+    padding: 0 35px;
+    border: 1px solid var(--hover);
+    border-radius: 5px;
+    transition: var(--transition);
+}
+
+#solution .common_heading a:hover {
+    color: #fff;
+    background: var(--hover);
+}
+
+/* ============================================
+                SOLUTION PART END
+=============================================*/
+
+/* ============================================
+                CHOOSE PART START
+=============================================*/
+
+#choose {
+    padding-bottom: 60px;
+}
+
+#choose .choose_left .common_heading h2 {
+    color: var(--title-color);
+    font-family: var(--popins);
+    font-size: 42px;
+    font-weight: 700;
+    text-transform: capitalize;
+    position: relative;
+    margin-bottom: 35px;
+}
+
+#choose .choose_left .common_heading h2:before {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 70px;
+    height: 1px;
+    background: var(--hover);
+}
+
+.common_heading h2 p {
+    color: var(--paragraph);
+    font-family: var(--roboto);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    margin-bottom: 55px;
+}
+
+#choose .choose_left .choose_list {
+    margin-top: 35px;
+    padding-left: 80px;
+    position: relative;
+}
+
+#choose .choose_left .choose_list i {
+    color: #fff;
+    font-size: 25px;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: var(--hover);
+    text-align: center;
+    line-height: 65px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#choose .choose_left .choose_list h3 {
+    color: var(--title-color);
+    font-family: var(--popins);
+    font-size: 22px;
+    font-weight: 700;
+}
+
+#choose .choose_left .choose_list p {
+    color: var(--paragraph);
+    font-family: var(--roboto);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+/* ============================================
+                CHOOSE PART END
+=============================================*/
+
+/* ============================================
+                OFFER PART START
+=============================================*/
+#offer {
+    padding: 125px 0;
+    background: #f8f8f8;
+}
+
+#offer .offer_header h2 {
+    color: var(--title-color);
+    font-family: var(--popins);
+    font-size: 42px;
+    font-weight: 700;
+    position: relative;
+}
+
+#offer .offer_header h2:after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--hover);
+}
+
+#offer .offer_header p {
+    color: var(--paragraph);
+    font-family: var(--roboto);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+#offer .offer_card {
+    text-align: center;
+    margin-top: 65px;
+}
+
+#offer .offer_card .card {
+    border-color: transparent;
+    background: #fff;
+    transition: var(--transition);
+}
+
+#offer .offer_card .card .card-body {
+
+    padding: 50px 35px;
+}
+
+#offer .offer_card .card:first-child,
+#offer .offer_card .card:nth-child(2),
+#offer .offer_card .card:nth-child(3) {
+    margin-bottom: 24px;
+}
+
+
+
+#offer .offer_card .card .card-body i {
+    font-size: 40px;
+    color: var(--hover);
+    margin-bottom: 25px;
+    transition: var(--transition);
+}
+
+#offer .offer_card .card .card-body .card-title {
+    color: var(--title-color);
+    font-family: var(--popins);
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    transition: var(--transition);
+}
+
+#offer .offer_card .card .card-body .card-text {
+    color: var(--paragraph);
+    font-family: var(--roboto);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    transition: var(--transition);
+}
+
+#offer .offer_card .card:hover {
+    background: var(--hover);
+}
+
+#offer .offer_card .card:hover .card-body .card-title,
+#offer .offer_card .card:hover .card-body .card-text,
+#offer .offer_card .card:hover .card-body i {
+    color: #fff;
+}
+
+
+
+/* ============================================
+                OFFER PART END
+=============================================*/
+
+/* ============================================
+                TEAM PART START
+=============================================*/
+#team {
+    padding: 120px 0;
+}
+
+#team .team_heading {
+    text-align: center;
+}
+
+#team .team_heading h2 {
+    color: var(--title-color);
+    font-family: var(--popins);
+    font-size: 42px;
+    font-weight: 700;
+    position: relative;
+}
+
+#team .team_heading h2:after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    background: var(--hover);
+}
+
+#team .team_heading p {
+    color: var(--paragraph);
+    font-family: var(--roboto);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    margin-top: 35px;
+}
+
+#team .team_img {
+    text-align: center;
+    position: relative;
+}
+#team .team_img .overly{
+    transition: var(--transition);
+}
+/* #team .team_img .overly{
+    position: relative;
+} */
+
+#team .team_img .overly:after{
+    width: 100%;
+    height: 100%;
+    background: rgba(234, 58, 96, 0.7);
+    z-index: 999;
+    transition: var(--transition);
+}
+
+#team .team_img .overly i{
+    color: #fff;
+    font-size: 140px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 99;
+}
+
+/* #team .team_img img{
+    max-width: 100%;
+    width: 100%;
+} */
+
+#team .team_img .team_text{
+    background: var(--hover);
+    padding: 35px 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    transition: var(--transition);
+}
+
+#team .team_img .team_text h4 {
+    color: #fff;
+    font-family: var(--popins);
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+#team .team_img .team_text h5 {
+    color: #fff;
+    font-family: var(--roboto);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#team .team_img:hover .team_text{
+    transform: translateY(100%);
+}
+
+/* #team .team_img:hover .overly:after{
+    height: 100%;
+} */
+
+/* #team .team_img:hover .overly{
+    transform: translateY(0);
+} */
+
+/* ============================================
+                TEAM PART END
+=============================================*/
+
+
+
+
+
+
+
+
+
+
+/* ============================================
+                HEADER PART START
+=============================================*/
+
+/* ============================================
+                HEADER PART END
+=============================================*/
