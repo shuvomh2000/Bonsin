@@ -204,7 +204,7 @@ li {
     position: relative;
 }
 
-#banner .overly:after {
+#banner .banner_part:after {
     content: '';
     position: absolute;
     top: 0;
@@ -212,13 +212,13 @@ li {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.4);
-    z-index: 1;
+    z-index: -1;
 }
 
 #banner .banner_text {
     padding: 125px 65px;
     background: var(--hover);
-    z-index: 99;
+    z-index: 9999;
 }
 
 #banner .banner_text h3 {
@@ -381,7 +381,7 @@ li {
     background: var(--hover);
 }
 
-.common_heading h2 p {
+#choose .common_heading h2 p {
     color: var(--paragraph);
     font-family: var(--roboto);
     font-size: 16px;
@@ -539,6 +539,7 @@ li {
 
 #team .team_heading {
     text-align: center;
+    margin-bottom: 60px;
 }
 
 #team .team_heading h2 {
@@ -572,45 +573,46 @@ li {
 #team .team_img {
     text-align: center;
     position: relative;
+    overflow: hidden;
 }
-#team .team_img .overly{
-    transition: var(--transition);
-}
-/* #team .team_img .overly{
-    position: relative;
-} */
 
-#team .team_img .overly:after{
+#team .team_img .overly {
+    text-align: center;
+    transform: scale(0);
+    transition: all linear .3s;
+}
+
+#team .team_img .overly {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background: rgba(234, 58, 96, 0.7);
-    z-index: 999;
     transition: var(--transition);
 }
 
-#team .team_img .overly i{
+#team .team_img .overly i {
     color: #fff;
     font-size: 140px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    z-index: 99;
+    transform: translate(-50%, -50%);
+    z-index: 9;
 }
 
-/* #team .team_img img{
-    max-width: 100%;
-    width: 100%;
-} */
 
-#team .team_img .team_text{
+#team .team_img .team_text {
     background: var(--hover);
     padding: 35px 0;
     position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
-    transition: var(--transition);
+    transform: translateY(0);
+    transition: all linear .4s;
 }
 
 #team .team_img .team_text h4 {
@@ -628,35 +630,648 @@ li {
     font-weight: 400;
 }
 
-#team .team_img:hover .team_text{
+#team .team_img:hover .team_text {
     transform: translateY(100%);
 }
 
-/* #team .team_img:hover .overly:after{
-    height: 100%;
-} */
+#team .team_img:hover .overly {
+    transform: scale(1);
+}
 
-/* #team .team_img:hover .overly{
-    transform: translateY(0);
-} */
+
 
 /* ============================================
                 TEAM PART END
 =============================================*/
 
+/* ============================================
+                COUNTER PART START
+=============================================*/
+#counter {
+    padding: 120px 0;
+    position: relative;
+}
 
+#counter:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(234, 58, 96, .7);
+}
 
+#counter .counter_col {
+    text-align: center;
+    z-index: 99;
+}
 
+#counter .counter_col h2 {
+    color: #fff;
+    font-family: var(--popins);
+    font-size: 74px;
+    font-weight: 700;
+}
 
+#counter .counter_col h3 {
+    color: #fff;
+    font-family: var(--roboto);
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
 
+/* ============================================
+                COUNTER PART END
+=============================================*/
+/* ============================================
+                QUESTION PART START
+=============================================*/
+#question {
+    padding: 120px 0;
+}
 
+#question .qus_left .common_heading h2 {
+    color: var(--title-color);
+    font-family: var(--popins);
+    font-size: 42px;
+    font-weight: 700;
+    text-transform: capitalize;
+    position: relative;
+    margin-bottom: 35px;
+}
 
+#question .qus_left .common_heading h2:before {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 70px;
+    height: 1px;
+    background: var(--hover);
+}
+
+#question .qus_left .common_heading p {
+    color: var(--paragraph);
+    font-family: var(--roboto);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    margin-bottom: 55px;
+}
+
+#question .qus_droplist .accordion-item {
+    background-color: #fff2f5;
+    border: none;
+}
+
+#question .qus_droplist button:focus:not(:focus-visible) {
+    outline: 0;
+}
+
+#question .qus_droplist .accordion-button:focus {
+    z-index: 3;
+    border-color: transparent;
+    outline: 0;
+    box-shadow: none;
+    background: var(--hover);
+    color: #fff;
+}
+
+#question .qus_droplist button {
+    color: var(--title-color);
+    font-family: var(--popins);
+    font-size: 18px;
+    font-weight: 700;
+    background: #fff2f5;
+    position: relative;
+}
+
+#question .qus_droplist button i {
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#question .qus_droplist .accordion-body p {
+    color: var(--paragraph);
+    font-family: var(--roboto);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+#question .qus_droplist .accordion-button:not(.collapsed)::after {
+    background-image: none;
+    transform: none;
+}
+
+#question .qus_droplist .accordion-button::after {
+    display: none;
+}
+
+#question .qus_droplist .accordion-button:focus i {
+    transform: rotate(90deg);
+}
 
 
 /* ============================================
-                HEADER PART START
+                QUESTION PART END
 =============================================*/
 
 /* ============================================
-                HEADER PART END
+                PLAN PART START
+=============================================*/
+
+#plan {
+    padding: 120px 0;
+    background: #f8f8f8;
+    text-align: center;
+}
+
+#plan .plan_heading {
+    margin-bottom: 60px;
+}
+
+#plan .plan_heading h2 {
+    color: var(--title-color);
+    font-family: var(--popins);
+    font-size: 42px;
+    font-weight: 700;
+    text-transform: capitalize;
+    position: relative;
+}
+
+#plan .plan_heading h2:after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    background: var(--hover);
+}
+
+#plan .plan_heading p {
+    color: var(--paragraph);
+    font-family: var(--roboto);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    margin-top: 35px;
+}
+
+
+
+#plan .plan_card h2 {
+    color: #fff;
+    font-family: var(--popins);
+    font-size: 42px;
+    font-weight: 700;
+    padding: 35px 0;
+    background: var(--hover);
+}
+
+#plan .plan_card h2 span {
+    color: #fff;
+    font-family: var(--popins);
+    font-size: 25px;
+    font-weight: 400;
+    text-transform: capitalize;
+    display: inline-block;
+}
+
+#plan .plan_card {
+    padding-bottom: 40px;
+    box-shadow: 0 10px 30px 15px rgba(0, 0, 0, 0.1);
+}
+
+#plan .plan_card ul {
+    padding: 40px 40px 20px 40px;
+    text-align: left;
+}
+
+#plan .plan_card ul li {
+    color: var(--paragraph);
+    font-family: var(--paragraph);
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+#plan .plan_card ul li .plan_check {
+    color: #008000;
+    margin-right: 10px;
+}
+
+#plan .plan_card ul li .plan_cross {
+    color: #EA3A60;
+    margin-right: 10px;
+}
+
+#plan .plan_card a {
+    color: var(--hover);
+    border: 1px solid var(--hover);
+    border-radius: 5px;
+    padding: 0 35px;
+    line-height: 50px;
+    font-family: var(--roboto);
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    transition: var(--transition);
+}
+
+#plan .plan_card a:hover {
+    color: #fff;
+    background: var(--hover);
+}
+
+/* ============================================
+                PLAN PART END
+=============================================*/
+
+/* ============================================
+                CLIENT PART START
+=============================================*/
+
+#client {
+    padding: 120px 0;
+}
+
+#client .client_heading {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#client .client_heading h2 {
+    color: var(--title-color);
+    font-family: var(--popins);
+    font-size: 42px;
+    font-weight: 700;
+    text-transform: capitalize;
+    position: relative;
+}
+
+#client .client_heading h2:after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    background: var(--hover);
+}
+
+#client .client_heading p {
+    color: var(--paragraph);
+    font-family: var(--roboto);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    margin-top: 35px;
+}
+
+#client .client_shadow{
+    box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+#client .client_part {
+    padding: 45px 30px;
+}
+
+#client .client_part p {
+    color: var(--paragraph);
+    font-family: var(--roboto);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+#client .client_part .client_text {
+    text-align: right;
+    position: relative;
+}
+
+#client .client_part .client_text h3 {
+    color: var(--title-color);
+    font-family: var(--popins);
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+#client .client_part .client_text h4 {
+    color: var(--paragraph);
+    font-family: var(--roboto);
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+#client .client_part .client_text .comments {
+    width: 30px;
+    position: absolute;
+    top: -30px;
+    right: -25px;
+    transform: rotate(180deg);
+}
+
+
+
+/* ============================================
+                CLIENT PART END
+=============================================*/
+
+/* ============================================
+                MISSION PART START
+=============================================*/
+#mission {
+    padding: 120px;
+    background: var(--hover);
+}
+
+#mission .mission_right .mission_heading h2 {
+    color: #fff;
+    font-family: var(--popins);
+    font-size: 42px;
+    font-weight: 700;
+    text-transform: capitalize;
+    position: relative;
+    margin-bottom: 35px;
+}
+
+#mission .mission_right .mission_heading h2:before {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 70px;
+    height: 1px;
+    background: #fff;
+}
+
+#mission .mission_right .mission_heading p {
+    color: #fff;
+    font-family: var(--roboto);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    margin-bottom: 55px;
+}
+
+#mission .mission_right .mission_heading .round a {
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    background: var(--hover);
+    border: 1px solid #fff;
+    position: relative;
+}
+
+#mission .mission_right .mission_heading .round a:after {
+    width: 100%;
+    height: 100%;
+    border: 5px solid #fff;
+    position: absolute;
+    content: "";
+    border-radius: 50%;
+    animation: play-button 3s linear infinite;
+    animation-delay: 0s;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* 0% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 1;
+}
+100% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+    opacity: 0;
+} */
+
+#mission .mission_right .mission_heading .round h3 {
+    color: #fff;
+    font-family: var(--roboto);
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 55px;
+    margin-left: 25px;
+}
+
+/* ============================================
+                MISSION PART END
+=============================================*/
+
+/* ============================================
+                NEWS PART START
+=============================================*/
+#news {
+    padding: 120px;
+}
+
+#news .news_heading {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#news .news_heading h2 {
+    color: var(--title-color);
+    font-family: var(--popins);
+    font-size: 42px;
+    font-weight: 700;
+    text-transform: capitalize;
+    position: relative;
+}
+
+#news .news_heading h2:after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    background: var(--hover);
+}
+
+#news .news_heading p {
+    color: var(--paragraph);
+    font-family: var(--roboto);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    margin-top: 35px;
+}
+
+#news .news_part {
+    overflow: hidden;
+}
+
+#news .news_part img {
+    transition: var(--transition);
+    z-index: 99;
+}
+
+#news .news_part .news_text {
+    border-left: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+    position: relative;
+    border-bottom: 5px solid rgba(234, 58, 96, 0.3);
+}
+
+#news .news_part .news_text:after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    height: 6px;
+    width: 100%;
+    background: var(--hover);
+    transform: scale(0);
+    transition: var(--transition);
+}
+
+#news .news_part .news_text h2 {
+    color: var(--title-color);
+    font-family: var(--popins);
+    font-size: 22px;
+    font-weight: 700;
+    padding: 35px 30px;
+    border-bottom: 1px solid #ebebeb;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+#news .news_part .news_text p {
+    color: var(--paragraph);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    padding: 30px;
+}
+
+#news .news_part .news_text .news_date {
+    padding: 15px 30px;
+    border-bottom: 1px solid #ebebeb;
+}
+
+#news .news_part .news_text .news_date h3 {
+    color: var(--paragraph);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+#news .news_part .news_text .news_date h3 i {
+    margin-right: 10px;
+}
+
+
+#news .news_part:hover img {
+    transform: scale(1.1);
+}
+
+#news .news_part .news_text h2:hover {
+    color: var(--hover);
+}
+
+#news .news_part .news_text .news_date h3:hover {
+    color: var(--hover);
+}
+
+#news .news_part:hover .news_text:after {
+    transform: scale(1);
+}
+
+/* ============================================
+                NEWS PART END
+=============================================*/
+
+
+/* ============================================
+                FOOTER PART START
+=============================================*/
+#footer {
+    padding: 120px 0;
+}
+
+#footer p {
+    color: var(--paragraph);
+    font-family: var(--roboto);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    margin-top: 20px;
+}
+
+#footer .to_call {
+    color: var(--title-color);
+    font-family: var(--roboto);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#footer h4 {
+    color: var(--paragraph);
+    font-family: var(--roboto);
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+#footer h2 {
+    color: var(--title-color);
+    font-family: var(--popins);
+    font-size: 26px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+#footer ul {
+    margin-top: 30px;
+}
+
+#footer ul li a {
+    color: var(--paragraph);
+    font-family: var(--roboto);
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    transition: var(--transition);
+}
+
+#footer ul li a:hover {
+    color: var(--hover);
+}
+
+#footer .copyright h5 {
+    color: var(--paragraph);
+    font-family: var(--roboto);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 60px;
+}
+
+/* ============================================
+                FOOTER PART END
 =============================================*/
