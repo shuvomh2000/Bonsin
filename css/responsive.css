@@ -1,0 +1,423 @@
+@media(min-width: 1400px) {}
+
+@media(min-width: 1200px) and (max-width: 1399.98px) {}
+
+@media(min-width: 992px) and (max-width: 1199.98px) {}
+
+@media(min-width: 768px) and (max-width: 991.98px) {}
+
+@media(min-width: 576px) and (max-width: 767.98px) {}
+
+
+
+
+/* extra small responsive start col */
+@media (max-width:575.98px) {
+
+    /*------------------ header & navbar start */
+    #nav .navbar-toggler i {
+        color: #fff;
+        font-size: 30px;
+    }
+
+    #nav .navbar-toggler:focus {
+        box-shadow: none;
+    }
+
+    #nav .mobile_header .btn-primary {
+        background: transparent;
+        border-color: transparent;
+    }
+
+    #nav .mobile_header button i {
+        font-size: 23px;
+    }
+
+
+    #nav .mobile_header .head_col .col_icon {
+        color: var(--hover);
+        font-size: 25px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+
+    #nav .mobile_header .head_col {
+        position: relative;
+        padding-left: 46px;
+        margin-bottom: 10px;
+    }
+
+    #nav .mobile_header .head_col h4 {
+        color: var(--paragraph);
+        font-family: var(--roboto);
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 5px;
+    }
+
+    #nav .mobile_header .head_col h5 {
+        font-family: var(--monostreat);
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+        cursor: pointer;
+        text-transform: capitalize;
+    }
+
+    #nav .mobile_header .social_icon {
+        display: flex;
+        flex-wrap: wrap;
+        line-height: 45px;
+    }
+
+    #nav .mobile_header .social_icon a {
+        font-size: 20px;
+        color: var(--hover);
+        margin-right: 20px;
+    }
+
+    #nav .btn-primary:focus {
+        box-shadow: none;
+    }
+
+    #nav .btn:focus {
+        box-shadow: none;
+    }
+
+    /*------------ header & navbar end */
+
+    /*------------ banner responsive start */
+
+    #solution {
+        padding: 70px 0;
+    }
+
+    #banner .banner_part {
+        padding: 135px 0;
+    }
+
+    #banner .banner_text {
+        text-align: center;
+        padding: 0;
+        background: none;
+        z-index: 9999;
+    }
+
+    #banner .banner_text h3 {
+        font-size: 18px;
+    }
+
+    #banner .banner_text h1 {
+        font-size: 36px;
+    }
+
+    #banner .banner_text p {
+        font-size: 15px;
+
+    }
+
+    /*------------ banner responsive end */
+
+    /*------------ Solution responsive start */
+
+    #solution .outter_img h3 {
+        font-size: 48px;
+    }
+
+    #solution .outter_img h2 {
+        font-size: 18px;
+    }
+
+    #solution .common_heading h2 {
+        font-size: 30px;
+        margin-top: 40px;
+    }
+
+    #solution .common_heading p {
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+
+    /*-------------- Solution responsive end */
+    /*-------------- choose responsive start */
+
+    #choose {
+        padding-bottom: 40px;
+    }
+
+    #choose .choose_left .common_heading {
+        text-align: center;
+    }
+
+    #choose .choose_left .common_heading h2 {
+        font-size: 30px;
+    }
+
+    #choose .choose_left .common_heading h2:before {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #choose .common_heading p {
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+
+    #choose .choose_left .choose_list i {
+        position: relative;
+        transform: translateY(0);
+        margin-bottom: 15px;
+    }
+
+
+    #choose .choose_left .choose_list {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    /*-------------- choose responsive end */
+    /*-------------- offer responsive start */
+    #offer {
+        padding: 40px 0;
+    }
+
+    #offer .offer_header h2 {
+        font-size: 30px;
+        text-align: center;
+        padding-bottom: 15px;
+    }
+
+    #offer .offer_header h2::after {
+        width: 100px;
+        height: 2px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 45px;
+    }
+
+    #offer .offer_header p {
+        font-size: 15px;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    /*-------------- offer responsive end */
+    /*-------------- team responsive start */
+    #team {
+        padding: 70px 0;
+    }
+
+    #team .team_heading h2 {
+        font-size: 30px;
+    }
+
+    #team .team_heading p {
+        font-size: 15px;
+    }
+
+    #team .team_img {
+        margin-bottom: 25px;
+    }
+
+    
+    /*-------------- team responsive end */
+
+    /*-------------- counter responsive start */
+
+    #counter {
+        padding: 70px 0;
+    }
+
+    #counter .counter_col h2 {
+        font-size: 46px;
+        margin-bottom: 10px;
+    }
+
+    #counter .counter_col h3 {
+        font-size: 16px;
+    }
+
+    #counter .counter_col {
+        margin-bottom: 45px;
+    }
+
+    #counter .lastcounter{
+        margin-bottom: 0;
+    }
+    /*-------------- counter responsive end */
+    /*-------------- question responsive start */
+
+    #question {
+        padding: 70px 0;
+    }
+
+    #question .qus_left .common_heading h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    #question .qus_left .common_heading h2::before {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #question .qus_left .common_heading p {
+        font-size: 15px;
+        text-align: center;
+    }
+    /*-------------- question responsive end */
+    /*-------------- plan responsive start */
+    #plan {
+        padding: 70px 0;
+    }
+
+    #plan .plan_heading h2 {
+        font-size: 30px;
+    }
+
+    #plan .plan_heading p {
+        font-size: 15px;
+    }
+
+    #plan .plan_card{
+        margin-bottom: 25px;
+    }
+
+    #plan .planlast{
+        margin-bottom: 0;
+    }
+
+    #plan .plan_card a {
+        padding: 0 25px;
+        line-height: 45px;
+    }
+    /*-------------- plan responsive end */
+    /*-------------- client responsive start */
+    #client {
+        padding: 70px 0;
+    }
+
+    #client .client_heading h2 {
+        font-size: 30px;
+    }
+
+    #client .client_heading p {
+        font-size: 15px;
+    }
+
+    #client .client_part .client_text {
+        text-align: left;
+        margin-top: 15px;
+    }
+
+    #client .client_part .client_text .comments {
+        top: -130px;
+        right: -20px;
+    }
+    /*-------------- client responsive end */
+    /*-------------- mission responsive start */
+
+    #mission {
+        padding: 70px 0;
+    }
+
+    #mission .mission_right{
+        margin-top: 30px;
+    }
+
+    #mission .mission_right .mission_heading h2::before {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+
+    #mission .mission_right .mission_heading h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    #mission .mission_right .mission_heading p {
+        font-size: 15px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    #mission .mission_right .mission_heading .round h3 {
+        font-size: 18px;
+    }
+    /*-------------- mission responsive end */
+    /*-------------- news responsive end */
+    #news {
+        padding: 70px 0;
+    }
+
+    #news .news_heading h2 {
+        font-size: 30px;
+    }
+
+    #news .news_heading p {
+        font-size: 15px;
+    }
+
+    #news .news_part{
+        margin-bottom: 25px;
+    }
+
+    #news .news_last{
+        margin-bottom: 0;
+    }
+    /*-------------- news responsive end */
+    /*-------------- footer responsive start */
+    #footer {
+        padding: 70px 0;
+    }
+
+    #footer p {
+        color: var(--paragraph);
+        font-size: 15px;
+        line-height: 27px;
+        margin-bottom: 15px;
+    }
+
+    #footer .to_call {
+        color: var(--title-color);
+        font-size: 22px;
+    }
+
+    #footer h4 {
+        color: var(--paragraph);
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+
+    #footer h2 {
+        font-size: 24px;
+    }
+
+    #footer ul li{
+        border-bottom: 1px solid rgba(34, 34, 34, 0.1);
+    }
+
+    #footer ul li:last-child{
+        border: 0;
+    }
+
+    #footer .footer_part{
+        margin-bottom: 15px;
+    }
+
+    #footer .footer_last{
+        margin-bottom: 0;
+    }
+
+    #footer .copyright h5 {
+        font-size: 15px;
+    }
+    /*-------------- footer responsive end */
+
+    /* =========================== */
+}
+
+/* extra small responsive end col */

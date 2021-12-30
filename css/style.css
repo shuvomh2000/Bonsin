@@ -23,14 +23,13 @@ h5,
 h6,
 ol,
 ul,
-li {
+li,
+p {
     margin: 0;
     padding: 0;
 }
 
-.container {
-    padding: 0;
-}
+
 
 :root {
     --hover: #ea3a60;
@@ -57,18 +56,14 @@ li {
 #header .head_col {
     padding-left: 46px;
     position: relative;
+    border-right: 1px solid var(--hover);
 }
 
-#header .head_col:after {
-    content: '';
-    position: absolute;
-    width: 1px;
-    height: 30px;
-    right: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    background: var(--hover);
+#header .lastborder{
+    border: none;
 }
+
+
 
 #header .head_col .col_icon {
     color: var(--hover);
@@ -96,19 +91,15 @@ li {
     text-transform: capitalize;
 }
 
-#header .head_col:nth-child(3):after,
-#header .head_col:last-child:after {
-    display: none;
-}
 
-#header .head_col .social_icon {
+#header .social_icon {
     display: flex;
     flex-wrap: wrap;
     justify-content: end;
     line-height: 45px;
 }
 
-#header .head_col .social_icon a {
+#header .social_icon a {
     font-size: 20px;
     color: var(--hover);
     margin-left: 20px;
@@ -122,18 +113,11 @@ li {
                 NAV PART START
 =============================================*/
 #nav {
-    padding: 30px 0;
     background: var(--hover);
 }
 
-#nav .main_menu ul li {
-    margin-left: 25px;
-    position: relative;
-    transition: var(--transition);
-}
-
-#nav .main_menu ul li a i {
-    padding-left: 5px;
+#nav .navbar {
+    padding: 30px 0;
 }
 
 #nav .main_menu ul li a {
@@ -141,52 +125,35 @@ li {
     font-family: var(--roboto);
     font-size: 14px;
     font-weight: 400;
-    line-height: 45px;
     text-transform: capitalize;
 }
 
-#nav .main_menu ul li ul {
-    position: absolute;
-    top: 100%;
-    left: -20px;
-    visibility: hidden;
-    opacity: 0;
-    background: #fff;
-    width: 220px;
-    transform: translateY(30px);
-    transition: var(--transition);
-    z-index: 999;
+
+#nav .main_menu ul li .dropdown-menu{
+    padding: 0;
 }
 
-#nav .main_menu ul li ul li {
-    line-height: 40px;
+#nav .main_menu ul li .dropdown-menu li{
     border-bottom: 1px solid rgba(34, 34, 34, 0.25);
-    margin-left: 0;
+
 }
 
-#nav .main_menu ul li ul li:last-child {
-    border-color: transparent;
-}
-
-#nav .main_menu ul li ul li a {
+#nav .main_menu ul li .dropdown-menu li a{
     color: var(--paragraph);
-    line-height: 40px;
-    padding-left: 20px;
+    line-height: 25px;
+    text-transform: capitalize;
     transition: var(--transition);
 }
 
-#nav .main_menu ul li:hover>ul {
-    visibility: visible;
-    opacity: 1;
-    transform: translateY(0);
+#nav .main_menu ul li .dropdown-menu li:last-child{
+    border: 0;
 }
 
-#nav .main_menu ul li ul li:hover {
+
+#nav .main_menu ul li .dropdown-menu li a:hover{
     background: var(--hover);
-}
-
-#nav .main_menu ul li ul li:hover a {
     color: #fff;
+    border-radius: 2px;
 }
 
 /* ============================================
@@ -381,7 +348,7 @@ li {
     background: var(--hover);
 }
 
-#choose .common_heading h2 p {
+#choose .common_heading p {
     color: var(--paragraph);
     font-family: var(--roboto);
     font-size: 16px;
@@ -937,7 +904,7 @@ li {
     margin-top: 35px;
 }
 
-#client .client_shadow{
+#client .client_shadow {
     box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.1);
 }
 
@@ -995,8 +962,13 @@ li {
                 MISSION PART START
 =============================================*/
 #mission {
-    padding: 120px;
+    padding: 120px 0;
     background: var(--hover);
+}
+
+#mission .mission_img{
+    width: 100%;
+    height: 100%;
 }
 
 #mission .mission_right .mission_heading h2 {
@@ -1047,7 +1019,9 @@ li {
     position: absolute;
     content: "";
     border-radius: 50%;
+    -webkit-animation: play-button 3s linear infinite;
     animation: play-button 3s linear infinite;
+    -webkit-animation-delay: 0s;
     animation-delay: 0s;
     left: 50%;
     top: 50%;
@@ -1081,7 +1055,7 @@ li {
                 NEWS PART START
 =============================================*/
 #news {
-    padding: 120px;
+    padding: 120px 0;
 }
 
 #news .news_heading {

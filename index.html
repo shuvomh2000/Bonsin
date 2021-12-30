@@ -16,35 +16,42 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
     <!-- ================================================== 
                     HEADER PART START
     =================================================== -->
-    <header id="header">
+    <header id="header" class="d-none d-md-block">
         <div class="container px-lg-0">
             <div class="row">
                 <!-- 1st colum -->
-                <div class="col-lg-2 head_col">
-                    <i class="fas fa-phone-alt col_icon"></i>
-                    <h4>Call Now</h4>
-                    <h5>159-952-5748</h5>
+                <div class="col-lg-2">
+                    <div class="head_col">
+                        <i class="fas fa-phone-alt col_icon"></i>
+                        <h4>Call Now</h4>
+                        <h5>159-952-5748</h5>
+                    </div>
                 </div>
                 <!-- 2nd colum -->
-                <div class="col-lg-3 head_col">
-                    <i class="far fa-map col_icon"></i>
-                    <h4>Location</h4>
-                    <h5>Minnie Downs QLD 4480</h5>
+                <div class="col-lg-3">
+                    <div class="head_col">
+                        <i class="far fa-map col_icon"></i>
+                        <h4>Location</h4>
+                        <h5>Minnie Downs QLD 4480</h5>
+                    </div>
                 </div>
                 <!-- 3rd colum -->
-                <div class="col-lg-3 head_col">
-                    <i class="far fa-clock col_icon"></i>
-                    <h4>Office Hours</h4>
-                    <h5>9:30 - 5:30 ( Sunday Closed )</h5>
+                <div class="col-lg-3">
+                    <div class="head_col lastborder">
+                        <i class="far fa-clock col_icon"></i>
+                        <h4>Office Hours</h4>
+                        <h5>9:30 - 5:30 (Sunday Closed)</h5>
+                    </div>
                 </div>
                 <!-- 4th colum -->
-                <div class="col-lg-4 head_col">
+                <div class="col-lg-4">
                     <div class="social_icon">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
@@ -62,71 +69,132 @@
     <!-- ================================================== 
                     NAV PART START
     =================================================== -->
-    <section id="nav">
-        <div class="container px-lg-0">
-            <div class="row">
-                <div class="col-lg-2">
+    <nav id="nav">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">
                     <img src="images/bonsin01.png" alt="bonsin01.png">
-                </div>
-                <div class="col-lg-10 main_menu">
-                    <ul class="d-flex justify-content-end">
-                        <li><a href="#">home<i class="fas fa-angle-down"></i></a>
-                            <ul>
-                                <li><a href="#">home one</a></li>
-                                <li><a href="#">home two</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">about</a></li>
-                        <li><a href="#">service<i class="fas fa-angle-down"></i></a>
-                            <ul>
-                                <li><a href="#">service part</a></li>
-                                <li><a href="#">service details</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">project<i class="fas fa-angle-down"></i></a>
-                            <ul>
-                                <li><a href="#">project</a></li>
-                                <li><a href="#">project details</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">galley</a></li>
-                        <li><a href="#">pages<i class="fas fa-angle-down"></i></a>
-                            <ul>
-                                <li><a href="#">team</a>
-                                    <ul>
-                                        <li><a href="#">team</a></li>
-                                        <li><a href="#">team details</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">testimonial</a></li>
-                                <li><a href="#">pricing</a></li>
-                                <li><a href="#">policy</a></li>
-                                <li><a href="#">terms $ condition</a></li>
-                                <li><a href="#">refund</a></li>
-                                <li><a href="#">missiob & vision</a></li>
-                                <li><a href="#">giving back</a></li>
-                                <li><a href="#">account</a>
-                                    <ul>
-                                        <li><a href="#">sign in</a></li>
-                                        <li><a href="#">sign up</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">404</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">news<i class="fas fa-angle-down"></i></a>
-                            <ul>
-                                <li><a href="#">blog</a></li>
-                                <li><a href="#">blog details</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">contact</a></li>
-                        <li><a href="#"><i class="fas fa-search nav_search"></i></a></li>
-                    </ul>
-                </div>
+                </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse main_menu" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <!-- ------------------home---------------- -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    home
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                </ul>
+                            </li>
+                            <!-- ----------about --------------------- -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">about</a>
+                            </li>
+                            <!-- -----------------service--------------- -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    service
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                </ul>
+                            </li>
+                            <!-- ---------------project------------------ -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    project
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                </ul>
+                            </li>
+                            <!-- -----------gallery-------------------- -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">gallery</a>
+                            </li>
+                            <!-- --------------pages--------------- -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    pages
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                </ul>
+                            </li>
+                            <!-- ----------------------news------------------ -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    news
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                </ul>
+                            </li>
+                            <!-- ---------------contact--------------------- -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">contact</a>
+                            </li>
+                            <!-- ----------------search-------------------- -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                <!-- mobile header start -->
+                <div class="mobile_header d-sm-block d-lg-none">
+                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><i class="fas fa-ellipsis-v"></i></button>
+
+                    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop"
+                        aria-labelledby="offcanvasTopLabel">
+                        <div class="offcanvas-body">
+                            <!-- style1 -->
+                            <div class="head_col">
+                                <i class="fas fa-phone-alt col_icon"></i>
+                                <h4>Call Now</h4>
+                                <h5>159-952-5748</h5>
+                            </div>
+                            <!-- style2 -->
+                            <div class="head_col">
+                                <i class="far fa-map col_icon"></i>
+                                <h4>Location</h4>
+                                <h5>Minnie Downs QLD 4480</h5>
+                            </div>
+                            <!-- style3 -->
+                            <div class="head_col lastborder">
+                                <i class="far fa-clock col_icon"></i>
+                                <h4>Office Hours</h4>
+                                <h5>9:30 - 5:30 (Sunday Closed)</h5>
+                            </div>
+                            <!-- social icon -->
+                            <div class="social_icon">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-vimeo-v"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <!-- mobile header end -->
             </div>
-        </div>
-    </section>
+        </nav>
+    </nav>
     <!-- ================================================== 
                     NAV PART END
     =================================================== -->
@@ -150,11 +218,12 @@
                         <div class="row">
                             <div class="col-lg-7">
                                 <div class="banner_text">
-                                <h3>success your business</h3>
-                                <h1>business growth</h1>
-                                <p>Sociosqu tenetur at, nam feugiat, at pellentesque diam ligula.i fusce adipiscing eget molestiae</p>
-                                <a href="#">what we do</a>
-                                <a href="#">contact us</a>
+                                    <h3>success your business</h3>
+                                    <h1>business growth</h1>
+                                    <p>Sociosqu tenetur at, nam feugiat, at pellentesque diam ligula.i fusce adipiscing
+                                        eget molestiae</p>
+                                    <a href="#">what we do</a>
+                                    <a href="#">contact us</a>
                                 </div>
                             </div>
                         </div>
@@ -168,7 +237,8 @@
                                 <div class="banner_text">
                                     <h3>success your business</h3>
                                     <h1>business growth</h1>
-                                    <p>Sociosqu tenetur at, nam feugiat, at pellentesque diam ligula.i fusce adipiscing eget molestiae</p>
+                                    <p>Sociosqu tenetur at, nam feugiat, at pellentesque diam ligula.i fusce adipiscing
+                                        eget molestiae</p>
                                     <a href="#">what we do</a>
                                     <a href="#">contact us</a>
                                 </div>
@@ -198,17 +268,23 @@
                         <h2>YEARS OF TRUST AND EXCELLENCE</h2>
                     </div>
                 </div>
-                <div class="col-lg-7 common_heading">
-                    <h2>Creating Solutions For Your Business</h2>
-                    <p>Nunc nec amet vestibulum. Nunc fringilla, aenean ipsum lorem morbi consectetuer aliquam quis,
-                        mauris ullamcorper, nam diam, fusce justo vestibulum felis. Lorem dapibus sed, modi dis magna
-                        vulputate laoreet eu, vestibulum est mollis accumsan in lorem, viverra diam nam ligula donec
-                        doloremque. Et sit interdum non facilisis nonummy, sed vitae sit hendrerit <span>Placeat
-                            adipisci similique autem quae quam totam ipsam maiores voluptatum error assumenda iuia
-                            corrupti tempora accusamus. pellentesque condimentum. Est in magna ullamcorper sit habitant,
-                            sed in porttitor diam aptent non, dictum ac dui quis dolor, orci luctus ac, fermentum risus
-                            lorem volutpa praesent lacus egestas, aliquam</span></p>
-                    <a href="#">read more</a>
+                <div class="col-lg-7 ">
+                    <div class="common_heading">
+                        <h2>Creating Solutions For Your Business</h2>
+                        <p>Nunc nec amet vestibulum. Nunc fringilla, aenean ipsum lorem morbi consectetuer aliquam quis,
+                            mauris ullamcorper, nam diam, fusce justo vestibulum felis. Lorem dapibus sed, modi dis
+                            magna
+                            vulputate laoreet eu, vestibulum est mollis accumsan in lorem, viverra diam nam ligula donec
+                            doloremque. Et sit interdum non facilisis nonummy, sed vitae sit hendrerit
+                            <span>Placeat adipisci similique autem quae quam totam ipsam maiores voluptatum error
+                                assumenda iuia
+                                corrupti tempora accusamus. pellentesque condimentum. Est in magna ullamcorper sit
+                                habitant,sed in porttitor diam aptent non, dictum ac dui quis dolor, orci luctus ac,
+                                fermentum risus lorem volutpa praesent lacus egestas, aliquam
+                            </span>
+                        </p>
+                        <a href="#">read more</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -420,7 +496,7 @@
                     <h2>256+</h2>
                     <h3>activated clients</h3>
                 </div>
-                <div class="col-lg-3 counter_col">
+                <div class="col-lg-3 counter_col lastcounter">
                     <h2>14k</h2>
                     <h3>project finished</h3>
                 </div>
@@ -561,7 +637,7 @@
                 </div>
                 <!-- plan 1 -->
                 <div class="col-lg-4">
-                    <div class="plan_card">
+                    <div class="plan_card planlast">
                         <h2>$369 <span>/ 3 Month</span></h2>
                         <ul>
                             <li><i class="fas fa-check plan_check"></i>Analytical Solutions</li>
@@ -597,7 +673,8 @@
                     <div class="client_shadow">
                         <div class="row client_part justify-content-between">
                             <div class="col-lg-7">
-                                <p>Ladipisicing elit. Sint voluptate, repudiandae inventore quos repellendus nostrum quis
+                                <p>Ladipisicing elit. Sint voluptate, repudiandae inventore quos repellendus nostrum
+                                    quis
                                     numquam consequatur. Hic</p>
                             </div>
                             <div class="col-lg-4">
@@ -615,7 +692,8 @@
                     <div class="client_shadow">
                         <div class="row client_part justify-content-between">
                             <div class="col-lg-7">
-                                <p>Ladipisicing elit. Sint voluptate, repudiandae inventore quos repellendus nostrum quis
+                                <p>Ladipisicing elit. Sint voluptate, repudiandae inventore quos repellendus nostrum
+                                    quis
                                     numquam consequatur. Hic</p>
                             </div>
                             <div class="col-lg-4">
@@ -642,7 +720,10 @@
     <section id="mission">
         <div class="container px-lg-0">
             <div class="row justify-content-between">
-                <div class="col-lg-5" style="background: url(images/bonsin15.png) no-repeat center/cover;">
+                <div class="col-lg-5">
+                    <div class="mission_img">
+                        <img class="w-100 img-fluid" src="images/bonsin15.png" alt="bonsin15.png">
+                    </div>
                 </div>
                 <div class="col-lg-6 mission_right">
                     <div class="mission_heading">
@@ -703,7 +784,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="news_part">
+                    <div class="news_part news_last">
                         <img class="w-100 img-fluid" src="images/bonsin18.png" alt="bonsin18.png">
                         <div class="news_text">
                             <h2>The Advantages Minimal Repair Technique</h2>
@@ -726,16 +807,17 @@
     <!-- ================================================== 
                     FOOTER PART START
     =================================================== -->
-    <section id="footer" style="background: url(images/bonsin19.png) no-repeat center/cover;">
+    <footer id="footer" style="background: url(images/bonsin19.png) no-repeat center/cover;">
         <div class="container">
             <div class="row justify-content-between">
                 <div class="col-lg-4">
                     <img src="images/bonsin20.png" alt="bonsin20.png">
-                    <p>Dempor pede libero dapi useu class venenatis ut bibendum quam ut nibh necnullam. NonhonPede mollis vel vitae dolorurpis</p>
+                    <p>Dempor pede libero dapi useu class venenatis ut bibendum quam ut nibh necnullam. NonhonPede
+                        mollis vel vitae dolorurpis</p>
                     <a class="to_call" href="#">1111-2222-3333</a>
                     <h4>24/7 support</h4>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-lg-2 footer_part">
                     <h2>Quick Link</h2>
                     <ul>
                         <li><a href="#">My Account</a></li>
@@ -745,7 +827,7 @@
                         <li><a href="#">pricing</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-lg-2 footer_part">
                     <h2>Help Center</h2>
                     <ul>
                         <li><a href="#">Help center</a></li>
@@ -755,7 +837,7 @@
                         <li><a href="#">Contact Now</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-lg-2 footer_part footer_last">
                     <h2>Legal Info</h2>
                     <ul>
                         <li><a href="#">Complaints Policy</a></li>
@@ -770,7 +852,7 @@
         <div class="copyright">
             <h5>Copyright © 2021. All Rights Reserved</h5>
         </div>
-    </section>
+    </footer>
     <!-- ================================================== 
                     FOOTER PART END
     =================================================== -->
