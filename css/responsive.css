@@ -118,6 +118,16 @@
 
     }
 
+    #banner .banner_text a {
+        font-size: 14px;
+        line-height: 30px;
+        padding: 0px 15px;
+        margin: 10px;
+
+    }
+
+
+
     /*------------ banner responsive end */
 
     /*------------ Solution responsive start */
@@ -221,7 +231,7 @@
         margin-bottom: 25px;
     }
 
-    
+
     /*-------------- team responsive end */
 
     /*-------------- counter responsive start */
@@ -243,9 +253,10 @@
         margin-bottom: 45px;
     }
 
-    #counter .lastcounter{
+    #counter .lastcounter {
         margin-bottom: 0;
     }
+
     /*-------------- counter responsive end */
     /*-------------- question responsive start */
 
@@ -267,6 +278,7 @@
         font-size: 15px;
         text-align: center;
     }
+
     /*-------------- question responsive end */
     /*-------------- plan responsive start */
     #plan {
@@ -281,11 +293,11 @@
         font-size: 15px;
     }
 
-    #plan .plan_card{
+    #plan .plan_card {
         margin-bottom: 25px;
     }
 
-    #plan .planlast{
+    #plan .planlast {
         margin-bottom: 0;
     }
 
@@ -293,6 +305,7 @@
         padding: 0 25px;
         line-height: 45px;
     }
+
     /*-------------- plan responsive end */
     /*-------------- client responsive start */
     #client {
@@ -316,6 +329,7 @@
         top: -130px;
         right: -20px;
     }
+
     /*-------------- client responsive end */
     /*-------------- mission responsive start */
 
@@ -323,7 +337,7 @@
         padding: 70px 0;
     }
 
-    #mission .mission_right{
+    #mission .mission_right {
         margin-top: 30px;
     }
 
@@ -347,6 +361,7 @@
     #mission .mission_right .mission_heading .round h3 {
         font-size: 18px;
     }
+
     /*-------------- mission responsive end */
     /*-------------- news responsive end */
     #news {
@@ -361,13 +376,14 @@
         font-size: 15px;
     }
 
-    #news .news_part{
+    #news .news_part {
         margin-bottom: 25px;
     }
 
-    #news .news_last{
+    #news .news_last {
         margin-bottom: 0;
     }
+
     /*-------------- news responsive end */
     /*-------------- footer responsive start */
     #footer {
@@ -396,25 +412,26 @@
         font-size: 24px;
     }
 
-    #footer ul li{
+    #footer ul li {
         border-bottom: 1px solid rgba(34, 34, 34, 0.1);
     }
 
-    #footer ul li:last-child{
+    #footer ul li:last-child {
         border: 0;
     }
 
-    #footer .footer_part{
+    #footer .footer_part {
         margin-bottom: 15px;
     }
 
-    #footer .footer_last{
+    #footer .footer_last {
         margin-bottom: 0;
     }
 
     #footer .copyright h5 {
         font-size: 15px;
     }
+
     /*-------------- footer responsive end */
 
     /* =========================== */
