@@ -15,6 +15,10 @@
 @media (max-width:575.98px) {
 
     /*------------------ header & navbar start */
+
+    #nav .navbar {
+        padding: 15px 0;
+    }
     #nav .navbar-toggler i {
         color: #fff;
         font-size: 30px;
@@ -122,10 +126,9 @@
         font-size: 14px;
         line-height: 30px;
         padding: 0px 15px;
-        margin: 10px;
+        margin: 0 10px;
 
     }
-
 
 
     /*------------ banner responsive end */
